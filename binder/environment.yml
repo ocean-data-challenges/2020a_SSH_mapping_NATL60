@@ -8,6 +8,7 @@ channels:
 dependencies:
   - basemap
   - xarray
+  - cython
   - numpy
   - matplotlib
   - geoviews==1.6.6
