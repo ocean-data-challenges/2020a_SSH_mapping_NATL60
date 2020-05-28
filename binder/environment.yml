@@ -8,6 +8,7 @@ channels:
 dependencies:
   - basemap
   - xarray
+  - zarr
   - cython
   - numpy
   - matplotlib
