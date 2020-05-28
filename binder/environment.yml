@@ -22,6 +22,7 @@ dependencies:
   - scipy
   - pandas
   - cartopy
+  - gcsfs
   - pip
   - pip:
     - fasteners==0.15
