@@ -17,7 +17,7 @@ This repository contains codes and sample notebooks for downloading and processi
  You can follow the quickstart guide in [this notebook](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/quickstart.ipynb) or lauch it directly from <a href="https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master?filepath=quickstart.ipynb" target="_blank">binder</a>.
 
 ## Download the data
-The data is hosted [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/ocean-data-challenges/dc_data1/) with the following directory structure
+The data is hosted [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/ocean-data-challenges/dc_data1/catalog.html) with the following directory structure
 
 ```
 . 
@@ -47,7 +47,7 @@ and the *reference* dataset (dc_ref, 11G) using (*this step may take several min
 ```shell
 wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/ocean-data-challenges/dc_data1/dc_ref.tar.gz
 ```
-and then uncompress the files using `tar -xvf <file>.tar.gz`. Tou may also use `ftp`, `rsync` or `curl`to donwload the data.  
+and then uncompress the files using `tar -xvf <file>.tar.gz`. You may also use `ftp`, `rsync` or `curl`to donwload the data.  
 
 
 ## Baselines and evaluation
