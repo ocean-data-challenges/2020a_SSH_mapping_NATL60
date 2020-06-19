@@ -2,8 +2,15 @@
 
 This repository contains codes and sample notebooks for downloading and processing the ssh-mapping data challenge.
 
-* needs a short description of the challenge
-* a short acknowledgement to WeatherBench?
+## Motivation
+
+The goal is to investigate how to best reconstruct sequences of Sea Surface Height (SSH) maps from partial satellite altimetry observations. This data challenge follows an _Observation System Simulation Experiment_ framework: "Real" full SSH are from a numerical simulation with a realistic, high-resolution ocean circulation model: the reference simulation. Satellite observations are simulated by sampling the reference simulation based on realistic orbits of past, existing or future altimetry satellites.
+
+### Reference simulation
+The reference simulation is the NATL60 simulation based on the NEMO model. The simulation is run without tidal forcing.
+
+### Observations
+The SSH observations include simulations of Topex-Poseidon, Jason 1, Geosat, Envisat, and SWOT. No observation error is considered in this challenge.
 
 [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master)
 
@@ -68,3 +75,7 @@ An example of how to load the data and run a statistical space-time interpolatio
 * tools for regridding
 * tools to compute geostrophic velocities, vorticity
 * spectra
+
+## Acknowledgement
+
+The structure of this data challenge was to a large extent inspired by[WeatherBench](https://github.com/pangeo-data/WeatherBench).
