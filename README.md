@@ -12,7 +12,7 @@ The reference simulation is the NATL60 simulation based on the NEMO model. The s
 ### Observations
 The SSH observations include simulations of Topex-Poseidon, Jason 1, Geosat, Envisat, and SWOT. No observation error is considered in this challenge.
 
-[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master)
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master?filepath=quickstart.ipynb)
 
 ## Leaderboard
 
