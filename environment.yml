@@ -24,6 +24,9 @@ dependencies:
   - pandas
   - cartopy
   - gcsfs
+  - hvplot
+  - pyinterp
+  - xrft
   - pip
   - pip:
     - fasteners==0.15
