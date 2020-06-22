@@ -1,6 +1,9 @@
 # SSH Mapping Data Challenge 2020a
 
-This repository contains codes and sample notebooks for downloading and processing the ssh-mapping data challenge.
+This repository contains codes and sample notebooks for downloading and processing the SSH mapping data challenge.
+
+The quickstart can be run online by clicking here:
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master?filepath=quickstart.ipynb)
 
 ## Motivation
 
@@ -12,7 +15,12 @@ The reference simulation is the NATL60 simulation based on the NEMO model. The s
 ### Observations
 The SSH observations include simulations of Topex-Poseidon, Jason 1, Geosat, Envisat, and SWOT. No observation error is considered in this challenge.
 
-[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master?filepath=quickstart.ipynb)
+### Data sequence and use
+ 
+The SSH reconstructions are assessed over the period from 2012-10-22 to 2012-12-02: 42 days, which is equivalent to two SWOT cycles in the SWOT science phase orbit.
+For reconstruction methods that need a spin-up, the **observations** can be used from 2012-10-01 until the beginning of the evaluation period (21 days). This spin-up period is not included in the evaluation. For reconstruction methods that need learning from full fields, the **reference data** can be used from 2013-01-02 to 2013-09-30. The reference data between 2012-12-02 and 2013-01-02 should never be used so that any learning period or other method-related-training period can be considered uncorrelated to the evaluation period.
+
+![Data Sequence](figures/DC-data_availability.png)
 
 ## Leaderboard
 
