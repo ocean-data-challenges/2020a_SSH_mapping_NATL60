@@ -7,7 +7,7 @@ The quickstart can be run online by clicking here:
 
 ## Motivation
 
-The goal is to investigate how to best reconstruct sequences of Sea Surface Height (SSH) maps from partial satellite altimetry observations. This data challenge follows an _Observation System Simulation Experiment_ framework: "Real" full SSH are from a numerical simulation with a realistic, high-resolution ocean circulation model: the reference simulation. Satellite observations are simulated by sampling the reference simulation based on realistic orbits of past, existing or future altimetry satellites.
+The goal is to investigate how to best reconstruct sequences of Sea Surface Height (SSH) maps from partial satellite altimetry observations. This data challenge follows an _Observation System Simulation Experiment_ framework: "Real" full SSH are from a numerical simulation with a realistic, high-resolution ocean circulation model: the reference simulation. Satellite observations are simulated by sampling the reference simulation based on realistic orbits of past, existing or future altimetry satellites. A baseline reconstruction method is provided (see below) and the practical goal of the challenge is to beat this baseline according to scores also described below and in Jupyter notebooks.
 
 ### Reference simulation
 The reference simulation is the NATL60 simulation based on the NEMO model. The simulation is run without tidal forcing.
@@ -65,24 +65,19 @@ wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopen
 and then uncompress the files using `tar -xvf <file>.tar.gz`. You may also use `ftp`, `rsync` or `curl`to donwload the data.  
 
 
-## Baselines and evaluation
+## Baseline and evaluation
 
-### Baselines
-The baselines are created using Jupyter notebooks in `notebooks/`. The SSH reconstructions are saved as a
- NetCDF file in the **ADJUST** `predictions` directory of the dataset. 
- 
-### Statistical interpolation baseline
-An example of how to load the data and run a statistical space-time interpolation is given in **ADJUST** `notebooks/3-cnn-example.ipynb`. 
-  
+### Baseline
+The baseline mapping method is optimal interpolation (OI), in the spirit of the present-day standard for DUACS products. OI is implemented in the [`baseline_oi`](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/baseline_oi.ipynb) Jupyter notebook. The SSH reconstructions are saved as a
+ NetCDF file in the `results` directory. The content of this directory is git-ignored.
+   
 ### Evaluation
+
+The evaluation of the mapping methods is based on the comparison of the SSH reconstructions with the reference simulation. It includes two scores, one based on the Root-Mean-Square Error (RMSE), the other based on Fourier spectra. The evaluation notebook [`example_data_eval`](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/example_data_eval.ipynb) implements the computation of these two scores as they could appear in the leaderboard. The notebook also provides additional, graphical diagnostics based on RMSE and spectra.
 
 ## Data processing
 
-**What do we need to describe here? My feeling is, this is useful to force flexibility in the processing tools (potential useful for diagnostics and reconstructions)**
-
-* tools for regridding
-* tools to compute geostrophic velocities, vorticity
-* spectra
+Cross-functional modules are gathered in the `src` directory. They include tools for regridding, plots, evaluation, writing and reading NetCDF files. The directory also contains a module that implements the baseline method.  
 
 ## Acknowledgement
 
