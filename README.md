@@ -10,7 +10,7 @@ The quickstart can be run online by clicking here:
 The goal is to investigate how to best reconstruct sequences of Sea Surface Height (SSH) maps from partial satellite altimetry observations. This data challenge follows an _Observation System Simulation Experiment_ framework: "Real" full SSH are from a numerical simulation with a realistic, high-resolution ocean circulation model: the reference simulation. Satellite observations are simulated by sampling the reference simulation based on realistic orbits of past, existing or future altimetry satellites. A baseline reconstruction method is provided (see below) and the practical goal of the challenge is to beat this baseline according to scores also described below and in Jupyter notebooks.
 
 ### Reference simulation
-The reference simulation is the NATL60 simulation based on the NEMO model (Ajayi et al. 2020 doi:[0.1029/2019JC015827](https://doi.org/10.1029/2019JC015827)). The simulation is run without tidal forcing. 
+The reference simulation is the NATL60 simulation based on the NEMO model (Ajayi et al. 2020 doi:[10.1029/2019JC015827](https://doi.org/10.1029/2019JC015827)). The simulation is run without tidal forcing. 
 
 ### Observations
 The SSH observations include simulations of Topex-Poseidon, Jason 1, Geosat, Envisat, and SWOT altimeter data. No observation error is considered in this challenge.
