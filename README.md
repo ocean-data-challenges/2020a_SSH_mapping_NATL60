@@ -13,7 +13,7 @@ The goal is to investigate how to best reconstruct sequences of Sea Surface Heig
 The reference simulation is the NATL60 simulation based on the NEMO model (Ajayi et al. 2020 doi:[10.1029/2019JC015827](https://doi.org/10.1029/2019JC015827)). The simulation is run without tidal forcing. 
 
 ### Observations
-The SSH observations include simulations of Topex-Poseidon, Jason 1, Geosat, Envisat, and SWOT altimeter data. No observation error is considered in this challenge.
+The SSH observations include simulations of Topex-Poseidon, Jason 1, Geosat Follow-On, Envisat, and SWOT altimeter data. This nadir altimeters constellation was operating during the 2003-2005 period and is still considered as a historical optimal constellation in terms of spatio-temporal coverage. The data challenge simulates the addition of SWOT to this reference constellation. No observation error is considered in this challenge.
 
 ### Data sequence and use
  
