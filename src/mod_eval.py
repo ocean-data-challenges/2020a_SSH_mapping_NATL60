@@ -27,7 +27,7 @@ def rmse_based_scores(ds_oi, ds_ref):
     logging.info('          => Leaderboard SSH RMSE score = %s', numpy.round(leaderboard_rmse.values, 2))
     logging.info('          Error variability = %s (temporal stability of the mapping error)', numpy.round(reconstruction_error_stability_metric, 2))
     
-    return rmse_t, rmse_xy
+    return rmse_t, rmse_xy, numpy.round(leaderboard_rmse.values, 2), numpy.round(reconstruction_error_stability_metric, 2)
 
 
 def psd_based_scores(ds_oi, ds_ref):
@@ -80,4 +80,4 @@ def psd_based_scores(ds_oi, ds_ref):
         logging.info('          => shortest temporal wavelength resolved = %s (days)',
                      numpy.round(shortest_temporal_wavelength_resolved, 2))
 
-        return (1.0 - mean_psd_err/mean_psd_signal)
+        return (1.0 - mean_psd_err/mean_psd_signal), numpy.round(shortest_spatial_wavelength_resolved, 2), numpy.round(shortest_temporal_wavelength_resolved, 2)
