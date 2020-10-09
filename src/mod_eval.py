@@ -58,22 +58,17 @@ def psd_based_scores(ds_oi, ds_ref):
         # return PSD-based score
         psd_based_score = (1.0 - mean_psd_err/mean_psd_signal)
 
-        # Find the key metrics: shortest temporal & spatial scales resolved
-        # Ideally, we must extract the 0.5 iso-contour and find the minimum scale fron it
-        # Here we look at the min value where psd_based_score >= 0.5
-        # Pour etre + precis, il faudrait faire un coder plus "chiader" pour interpoler les échelles sur l'iso-contour
-        # (cf. ce qui est fait dans SCUBA pour la valid avec along-track indenpedent...)
+        # Find the key metrics: shortest temporal & spatial scales resolved based on the 0.5 contour criterion of the PSD_score
 
-        index_minimum_lon_scale_resolved = numpy.max(
-            numpy.ma.notmasked_edges(
-                numpy.ma.masked_invalid(psd_based_score.where(psd_based_score >= 0.5).values), axis=0)[1][1])
+        
 
-        index_minimum_time_scale_resolved = numpy.max(
-            numpy.ma.notmasked_edges(
-                numpy.ma.masked_invalid(psd_based_score.where(psd_based_score >= 0.5).values), axis=1)[1][0])
-
-        shortest_spatial_wavelength_resolved = 1./psd_based_score.freq_lon.values[index_minimum_lon_scale_resolved]
-        shortest_temporal_wavelength_resolved = 1. / psd_based_score.freq_time.values[index_minimum_time_scale_resolved]
+        level = [0.5]
+        cs = plt.contour(1./psd_based_score.freq_lon.values,1./psd_based_score.freq_time.values, psd_based_score, level)
+        x05, y05 = cs.collections[0].get_paths()[0].vertices.T
+        plt.close()
+        
+        shortest_spatial_wavelength_resolved = numpy.min(x05)
+        shortest_temporal_wavelength_resolved = numpy.min(y05)
 
         logging.info('          => Leaderboard Spectral score = %s (degree lon)',
                      numpy.round(shortest_spatial_wavelength_resolved, 2))
