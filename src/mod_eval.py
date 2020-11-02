@@ -3,6 +3,7 @@ import numpy
 import logging
 import xrft
 from dask.diagnostics import ProgressBar
+import matplotlib.pyplot as plt
 
 def rmse_based_scores(ds_oi, ds_ref):
     
