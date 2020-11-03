@@ -37,16 +37,13 @@ The data is hosted [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredd
 ```
 . 
 |-- dc_obs
-|   |-- tpn
-|        |-- BOOST-SWOT_TPN_nadir_c*_p*.nc
-|   |-- swot
-|        |-- BOOST-SWOT_SWOT_nadir_GULFSTREAM_c*_p*.nc
-|   |-- j1
-|        |-- BOOST-SWOT_SWOT_J1_nadir_c*_p*.nc
-|   |-- g2
-|        |-- BOOST-SWOT_SWOT_G2_nadir_c*_p*.nc
-|   |-- en
-|        |-- BOOST-SWOT_SWOT_EN_nadir_c*_p*.nc
+|   |-- 2020a_SSH_mapping_NATL60_topex-poseidon_interleaved.nc
+|   |-- 2020a_SSH_mapping_NATL60_nadir_swot.nc 
+|   |-- 2020a_SSH_mapping_NATL60_karin_swot.nc
+|   |-- 2020a_SSH_mapping_NATL60_jason1.nc
+|   |-- 2020a_SSH_mapping_NATL60_geosat2.nc
+|   |-- 2020a_SSH_mapping_NATL60_envisat.nc
+
 |-- dc_ref
 |   |-- NATL60-CJM165_GULFSTREAM_y****m**d**.1h_SSH.nc
 
