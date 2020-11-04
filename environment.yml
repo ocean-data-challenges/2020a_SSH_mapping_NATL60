@@ -27,6 +27,7 @@ dependencies:
   - hvplot
   - pyinterp
   - xrft
+  - tabulate
   - pip
   - pip:
     - fasteners==0.15

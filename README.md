@@ -24,9 +24,16 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 
 ## Leaderboard
 
-| Method | SSH RMSE | Spectral score | Notes | Reference |
-|--------------------|----------------------------------|----------------------------|----------------------|------------------|
-| Statistical interpolation |  xx  |  YY |  Covariances not optimized |  quickstart demo  |
+| Method     |   µ(RMSE) |   σ(RMSE) |   λx (degree) |   λt (days) | Notes                     | Reference        |
+|:-----------|------------------------:|---------------------:|-------------------------:|-----------------------:|:--------------------------|:-----------------|
+| OI 1 nadir |                    0.69 |                 0.03 |                     3.31 |                  33.32 | Covariances not optimized | quickstart.ipynb |
+| OI 4 nadirs |                    0.83 |                 0.04 |                     2.25 |                  15.67 | Covariances not optimized | quickstart.ipynb |
+| OI 1 swot |                    0.85 |                 0.05 |                     1.22 |                  12.38 | Covariances not optimized | quickstart.ipynb |
+
+**µ(RMSE)**: average RMSE score.  
+**σ(RMSE)**: standard deviation of the RMSE score.  
+**λx**: minimum spatial scale resolved.  
+**λt**: minimum time scale resolved. 
  
 ## Quick start
 You can follow the quickstart guide in [this notebook](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/quickstart.ipynb) or launch it directly from <a href="https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master?filepath=quickstart.ipynb" target="_blank">binder</a>.
