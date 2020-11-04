@@ -15,7 +15,7 @@ def oi_regrid(ds_source, ds_target):
     grid_source = pyinterp.Grid3D(x_source_axis, y_source_axis, z_source_axis, ssh_source.data)
     
     # Define target grid
-    mx_target, my_target, mz_target = numpy.meshgrid(ds_target['lon'].values%360.,
+    mx_target, my_target, mz_target = numpy.meshgrid(ds_target['lon'].values,
                                                      ds_target['lat'].values,
                                                      z_source_axis.safe_cast(ds_target['time'].values),
                                                      indexing="ij")

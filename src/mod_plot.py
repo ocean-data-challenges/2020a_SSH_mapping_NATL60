@@ -30,8 +30,8 @@ def plot_psd_score_v0(ds_psd):
         ax.invert_xaxis()
         c1 = ax.contourf(1./(ds_psd.freq_lon), 1./ds_psd.freq_time, data,
                           levels=numpy.arange(0,1.1, 0.1), cmap='RdYlGn', extend='both')
-        ax.set_xlabel('wavenumber(degree_lon)', fontweight='bold', fontsize=18)
-        ax0[0].set_ylabel('frequency (days)', fontweight='bold', fontsize=18)
+        ax.set_xlabel('spatial wavelength (degree_lon)', fontweight='bold', fontsize=18)
+        ax0[0].set_ylabel('temporal wavelength (days)', fontweight='bold', fontsize=18)
         #plt.xscale('log')
         ax.set_yscale('log')
         ax.grid(linestyle='--', lw=1, color='w')
@@ -151,8 +151,8 @@ def plot_psd_score(ds):
     c1 = plt.contourf(1./(ds['freq_lon']), 1./ds['freq_time'], ds['psd_score'],
                       levels=numpy.arange(0,1.1, 0.1), cmap='RdYlGn', extend='both')
     cbar = plt.colorbar(pad=0.01)
-    plt.xlabel('wavelenght(degree_lon)', fontweight='bold', fontsize=20)
-    plt.ylabel('wavelenght (days)', fontweight='bold', fontsize=20)
+    plt.xlabel('spatial wavelenght (degree_lon)', fontweight='bold', fontsize=20)
+    plt.ylabel('temporal wavelenght (days)', fontweight='bold', fontsize=20)
     #plt.xscale('log')
     #plt.yscale('log')
     plt.grid(linestyle='--', lw=1, color='w')
