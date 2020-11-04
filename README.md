@@ -29,6 +29,11 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 | OI 1 nadir |                    0.69 |                 0.03 |                     3.31 |                  33.32 | Covariances not optimized | quickstart.ipynb |
 | OI 4 nadirs |                    0.83 |                 0.04 |                     2.25 |                  15.67 | Covariances not optimized | quickstart.ipynb |
 | OI 1 swot |                    0.85 |                 0.05 |                     1.22 |                  12.38 | Covariances not optimized | quickstart.ipynb |
+| | | | | | | |
+| duacs 4 nadirs |       0.92 |      0.01 |          1.45 |       12.01 | Covariances DUACS | eval_duacs.ipynb |
+| bfn 4 nadirs |       0.92 |      0.01 |          1.23 |       10.18 | QG Nudging | eval_bfn.ipynb |
+| duacs 1 swot + 4 nadirs |       0.92 |      0.02 |          1.23 |       11.15 | Covariances DUACS | eval_duacs.ipynb |
+| bfn 1 swot + 4 nadirs |       0.93 |      0.02 |           0.8 |        7.86 | QG Nudging | eval_bfn.ipynb |
 
 **µ(RMSE)**: average RMSE score.  
 **σ(RMSE)**: standard deviation of the RMSE score.  
