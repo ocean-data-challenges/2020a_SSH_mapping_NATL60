@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4045400.svg)](https://doi.org/10.5281/zenodo.4045400)
+
 # SSH Mapping Data Challenge 2020a
 
 This repository contains codes and sample notebooks for downloading and processing the SSH mapping data challenge.
