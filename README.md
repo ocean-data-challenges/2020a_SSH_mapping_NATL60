@@ -34,9 +34,13 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 | | | | | | | |
 | duacs 4 nadirs |       0.92 |      0.01 |          1.45 |       12.01 | Covariances DUACS | eval_duacs.ipynb |
 | bfn 4 nadirs  :trophy:|       0.92 |      0.01 |          **1.23** |       **10.18** | QG Nudging | eval_bfn.ipynb |
+| dymost 4 nadirs |       0.91 |      0.01 |          1.36 |       10.77 | Dynamic mapping | eval_dymost.ipynb |
+| miost 4 nadirs |       **0.93** |      0.01 |          1.37 |       10.23 | Multiscale mapping | eval_miost.ipynb |
 | | | | | | | |
 | duacs 1 swot + 4 nadirs |       0.92 |      0.02 |          1.23 |       11.15 | Covariances DUACS | eval_duacs.ipynb |
 | bfn 1 swot + 4 nadirs :trophy: |       0.93 |      0.02 |           **0.8** |        **7.86** | QG Nudging | eval_bfn.ipynb |
+| dymost 1 swot + 4 nadirs |       0.93 |      0.02 |           1.2 |        9.19 | Dynamic mapping | eval_dymost.ipynb |
+| miost 1 swot + 4 nadirs |       **0.94** |      **0.01** |          1.18 |       10.02 | Multiscale mapping | eval_miost.ipynb |
 
 **µ(RMSE)**: average RMSE score.  
 **σ(RMSE)**: standard deviation of the RMSE score.  
