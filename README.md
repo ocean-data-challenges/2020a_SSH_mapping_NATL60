@@ -51,7 +51,7 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 You can follow the quickstart guide in [this notebook](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/quickstart.ipynb) or launch it directly from <a href="https://binder.pangeo.io/v2/gh/ocean-data-challenges/2020a_SSH_mapping_NATL60/master?filepath=quickstart.ipynb" target="_blank">binder</a>.
 
 ## Download the data
-The data is hosted [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/ocean-data-challenges/dc_data1/catalog.html) with the following directory structure
+The data are hosted on the [AVISO+ website](https://www.aviso.altimetry.fr/en/data/products/ocean-data-challenges/2020a-ssh-mapping-natl60.html) and tagged with DOI: 10.24400/527896/a01-2020.002. The website also provides a data handbook. This is the recommended access. The data are also temporarily available [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/ocean-data-challenges/dc_data1/catalog.html). They are presented with the following directory structure:
 
 ```
 . 
@@ -68,12 +68,12 @@ The data is hosted [here](https://ige-meom-opendap.univ-grenoble-alpes.fr/thredd
 
 ```
 
-To start out download the *observation* dataset (dc_obs, 285M) using : 
+To start out download the *observation* dataset (dc_obs, 285M) from the temporary data server, use: 
 ```shell
 wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/ocean-data-challenges/dc_data1/dc_obs.tar.gz
 ```
 
-and the *reference* dataset (dc_ref, 11G) using (*this step may take several minutes*) : 
+and the *reference* dataset (dc_ref, 11G) using (*this step may take several minutes*): 
 
 ```shell
 wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/ocean-data-challenges/dc_data1/dc_ref.tar.gz
