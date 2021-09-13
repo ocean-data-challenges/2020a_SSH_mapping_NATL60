@@ -49,8 +49,8 @@ def psd_based_scores(ds_oi, ds_ref):
         signal['time'] = (signal.time - signal.time[0]) / numpy.timedelta64(1, 'D')
     
         # Compute PSD_err and PSD_signal
-        psd_err = xrft.power_spectrum(err, dim=['time', 'lon'], detrend='linear', window=True).compute()
-        psd_signal = xrft.power_spectrum(signal, dim=['time', 'lon'], detrend='linear', window=True).compute()
+        psd_err = xrft.power_spectrum(err, dim=['time', 'lon'], detrend='constant', window=True).compute()
+        psd_signal = xrft.power_spectrum(signal, dim=['time', 'lon'], detrend='constant', window=True).compute()
         
         # Averaged over latitude
         mean_psd_signal = psd_signal.mean(dim='lat').where((psd_signal.freq_lon > 0.) & (psd_signal.freq_time > 0), drop=True)
