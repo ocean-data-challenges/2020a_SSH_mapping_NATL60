@@ -32,16 +32,16 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 | baseline OI 4 nadirs |                    0.83 |                 0.04 |                     2.25 |                  15.67 | Covariances not optimized | quickstart.ipynb |
 | baseline OI 1 swot |                    0.85 |                 0.05 |                     1.22 |                  12.38 | Covariances not optimized | quickstart.ipynb |
 | | | | | | | |
-| duacs 4 nadirs |       0.92 |      0.01 |          1.45 |       12.01 | Covariances DUACS | eval_duacs.ipynb |
-| bfn 4 nadirs  |       0.92 |      0.01 |          1.23 |       **10.18** | QG Nudging | eval_bfn.ipynb |
-| dymost 4 nadirs |       0.91 |      0.01 |          1.36 |       10.77 | Dynamic mapping | eval_dymost.ipynb |
-| miost 4 nadirs |       0.93 |      0.01 |          1.37 |       10.23 | Multiscale mapping | eval_miost.ipynb |
+| duacs 4 nadirs |       0.92 |      0.01 |          1.42 |       12.0 | Covariances DUACS | eval_duacs.ipynb |
+| bfn 4 nadirs  |       0.92 |      0.02 |          1.23 |       10.6 | QG Nudging | eval_bfn.ipynb |
+| dymost 4 nadirs |       0.91 |      0.01 |          1.36 |       11.79 | Dynamic mapping | eval_dymost.ipynb |
+| miost 4 nadirs |       0.93 |      0.01 |          1.35 |       10.19 | Multiscale mapping | eval_miost.ipynb |
 | 4DVarNet 4 nadirs :trophy: |       **0.94** |      0.01 |          **1.18** |       10.34 | 4DVarNet mapping | eval_4dvarnet.ipynb |
 | | | | | | | |
-| duacs 1 swot + 4 nadirs |       0.92 |      0.02 |          1.23 |       11.15 | Covariances DUACS | eval_duacs.ipynb |
-| bfn 1 swot + 4 nadirs  |       0.93 |      0.02 |           **0.8** |        7.86 | QG Nudging | eval_bfn.ipynb |
-| dymost 1 swot + 4 nadirs |       0.93 |      0.02 |           1.2 |        9.19 | Dynamic mapping | eval_dymost.ipynb |
-| miost 1 swot + 4 nadirs |       0.94 |      **0.01** |          1.18 |       10.02 | Multiscale mapping | eval_miost.ipynb |
+| duacs 1 swot + 4 nadirs |       0.92 |      0.02 |          1.22 |       11.15 | Covariances DUACS | eval_duacs.ipynb |
+| bfn 1 swot + 4 nadirs  |       0.93 |      0.02 |           **0.8** |        10.09 | QG Nudging | eval_bfn.ipynb |
+| dymost 1 swot + 4 nadirs |       0.93 |      0.02 |           1.2 |        10.07 | Dynamic mapping | eval_dymost.ipynb |
+| miost 1 swot + 4 nadirs |       0.94 |      **0.01** |          1.18 |       10.14 | Multiscale mapping | eval_miost.ipynb |
 | 4DVarNet 1 swot + 4 nadirs :trophy: |       **0.95** |      **0.01** |          0.82 |        **6.57** | 4DVarNet mapping | eval_4dvarnet.ipynb |
 
 **µ(RMSE)**: average RMSE score.  
