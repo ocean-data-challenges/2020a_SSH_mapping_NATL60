@@ -8,9 +8,9 @@ def oi_regrid(ds_source, ds_target):
     logging.info('     Regridding...')
     
     # Define source grid
-    x_source_axis = pyinterp.Axis(ds_source["lon"][:], is_circle=False)
-    y_source_axis = pyinterp.Axis(ds_source["lat"][:])
-    z_source_axis = pyinterp.TemporalAxis(ds_source["time"][:])
+    x_source_axis = pyinterp.Axis(ds_source["lon"][:].values, is_circle=False)
+    y_source_axis = pyinterp.Axis(ds_source["lat"][:].values)
+    z_source_axis = pyinterp.TemporalAxis(ds_source["time"][:].values)
     ssh_source = ds_source["gssh"][:].T
     grid_source = pyinterp.Grid3D(x_source_axis, y_source_axis, z_source_axis, ssh_source.data)
     
