@@ -97,9 +97,9 @@ def plot_demo_obs(list_of_dataset, dc_ref, central_date, delta_t):
 
 
 def reformat_dc_ref(dc_ref):
-    ds_out = xr.Dataset({'ssh_model': (('lat', 'lon'), dc_ref.sossheig)},
-                        coords={'lon': dc_ref.lon % 360,
-                                'lat': dc_ref.lat,
+    ds_out = xr.Dataset({'ssh_model': (('lat', 'lon'), dc_ref.sossheig.values)},
+                        coords={'lon': dc_ref.lon.values % 360,
+                                'lat': dc_ref.lat.values,
                                 })
     ds_out.lon.attrs["long_name"] = 'Longitude'
     ds_out.lat.attrs["long_name"] = 'Latitude'
