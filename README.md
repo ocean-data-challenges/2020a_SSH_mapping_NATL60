@@ -76,13 +76,13 @@ The data are hosted on the [AVISO+ website](https://www.aviso.altimetry.fr/en/da
 
 To start out download the *observation* dataset (dc_obs, 285M) from the temporary data server, use: 
 ```shell
-wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2020a_SSH_mapping_NATL60/dc_obs.tar.gz
+wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2020a_SSH_mapping_NATL60/dc_obs.tar.gz
 ```
 
 and the *reference* dataset (dc_ref, 11G) using (*this step may take several minutes*): 
 
 ```shell
-wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/catalog/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2020a_SSH_mapping_NATL60/dc_ref.tar.gz
+wget https://ige-meom-opendap.univ-grenoble-alpes.fr/thredds/fileServer/meomopendap/extract/MEOM/OCEAN_DATA_CHALLENGES/2020a_SSH_mapping_NATL60/dc_ref.tar.gz
 ```
 and then uncompress the files using `tar -xvf <file>.tar.gz`. You may also use `ftp`, `rsync` or `curl`to donwload the data.  
 
