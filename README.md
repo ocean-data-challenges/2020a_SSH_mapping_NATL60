@@ -37,14 +37,18 @@ For reconstruction methods that need a spin-up, the **observations** can be used
 | dymost 4 nadirs |       0.91 |     <span style="color:green"> **0.01** </span> |          1.36 |       11.91 | Dynamic mapping | [eval_dymost.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_dymost.ipynb) |
 | miost 4 nadirs |       0.93 |     <span style="color:green"> **0.01** </span> |          1.35 |       10.41 | Multiscale mapping | [eval_miost.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_miost.ipynb) |
 | 4DVarNet 4 nadirs |      <span style="color:green"> **0.94** |     <span style="color:green">**0.01** </span> |          1.19 |       10.64 | 4DVarNet mapping | [eval_4dvarnet.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_4dvarnet.ipynb) |
-| 4DVarNet v2022 4 nadirs :trophy: |       <span style="color:green">**0.94** </span> |      <span style="color:green">**0.01** </span> |         <span style="color:green"> **0.83** |      <span style="color:green"> **8.03** | 4DVarNet mapping | [eval_4dvarnet_v2022.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_4dvarnet_v2022.ipynb) |
+| 4DVarNet v2022 4 nadirs |    0.94   | 0.01  | **0.83** |  8.03 | 4DVarNet mapping | [eval_4dvarnet_v2022.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_4dvarnet_v2022.ipynb) |
+| 4DVarQG 4 nadirs |       **0.95** |      0.01 | 0.82 | **5.84** | 4DVar QG | eval_4DvarQG.ipynb |
 | | | | | | | |
 | duacs 1 swot + 4 nadirs |       0.92 |      0.02 |          1.22 |       11.37 | Covariances DUACS |[eval_duacs.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_duacs.ipynb) |
 | bfn 1 swot + 4 nadirs  |       0.93 |      0.02 |           1. |        10.24 | QG Nudging | [eval_bfn.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_bfn.ipynb) |
 | dymost 1 swot + 4 nadirs |       0.93 |      0.02 |           1.19 |        10.04 | Dynamic mapping | [eval_dymost.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_dymost.ipynb) |
 | miost 1 swot + 4 nadirs |       0.94 |      <span style="color:green">**0.01** </span> |          1.18 |       10.33 | Multiscale mapping | [eval_miost.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_miost.ipynb) |
 | 4DVarNet 1 swot + 4 nadirs |       0.95 |      <span style="color:green">**0.01** </span> |          0.7 |        6.48 | 4DVarNet mapping | [eval_4dvarnet.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_4dvarnet.ipynb) |
-| 4DVarNet v2022 1 swot + 4 nadirs :trophy: |       <span style="color:green">**0.96** </span> |     <span style="color:green"> **0.01** </span> |          <span style="color:green">**0.62** </span> |        <span style="color:green">**4.35** </span> | 4DVarNet mapping | [eval_4dvarnet_v2022.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_4dvarnet_v2022.ipynb) |
+| 4DVarNet v2022 1 swot + 4 nadirs  | **0.96** | 0.01 | **0.62**  | **4.35** | 4DVarNet mapping | [eval_4dvarnet_v2022.ipynb](https://github.com/ocean-data-challenges/2020a_SSH_mapping_NATL60/blob/master/notebooks/eval_4dvarnet_v2022.ipynb) |
+| 4DVarQG 1 swot + 4 nadirs |       **0.96** |      0.01 |  0.66 |  4.65  | 4DVar QG | eval_4DvarQG.ipynb  |
+    
+    
 
 
 
